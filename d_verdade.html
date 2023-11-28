@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,3 +85,91 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agora, é sério (talvez)</title>
+    <style>
+        /* Estilo para o texto com efeito de mudança de cor */
+        .rgb-text {
+            font-size: 26px;
+            animation: changeColor 8s infinite; /* Animação para mudança de cor */
+        }
+
+        /* Definição da animação para mudança de cor */
+        @keyframes changeColor {
+            0% { color: red; } /* Cor inicial (vermelho) */
+            20% { color: rgb(113, 0, 128); } /* Cor após 1/3 da animação */
+            30% { color:aqua; }
+            40% { color: blue; } /* Cor após 2/3 da animação */
+            50% { color: rgb(80, 189, 52); } /* Cor final */
+            60% { color:burlywood; }
+            70% { color:cadetblue; }
+            80% { color:goldenrod; }
+        }
+
+        /* Estilos para o acordeão */
+        .accordion {
+            background-color: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ddd;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .panel.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p class="rgb-text">gay baitola</p>
+
+    <h1>Falando sério agora, obrigada por estar comigo por esses dois meses ❤️</h1>
+    <h2>Você me salvou e ainda me salva de muitas coisas até hoje. Espero que você fique bem de tudo isso que está passando.</h2>
+    <h3>Eu te amo muito e sei que vamos criar mais memórias juntos. E quero ficar com você até o final das nossas vidas.</h3>
+
+    <!-- Divisória com categoria -->
+    <button class="accordion">Tem mais coisinhas pra ver aqui</button>
+    <div class="panel">
+        <p>Este é um texto arrumado que pode ser exibido quando a categoria é aberta.</p>
+        <p>Mais informações podem ser adicionadas aqui.</p>
+    </div>
+
+    <script>
+        // Script para controlar a funcionalidade do acordeão
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+>>>>>>> 9be60b58e8c8a3e5b860be75b990c5704935516a
